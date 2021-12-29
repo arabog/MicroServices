@@ -5,16 +5,17 @@ const app = express()
 
 app.use(express.json())
 
+//Express community: https://gitter.im/expressjs/express 
 
 const posts = {}
 
 
-app.get("/", (req, res) => {
+app.get("/posts", (req, res) => {
           res.send(posts)
 })
 
 
-app.post("/", (req, res) => {
+app.post("/posts", (req, res) => {
           const id = randomBytes(4).toString("hex")
           
           const { title } = req.body;
