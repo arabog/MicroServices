@@ -9,7 +9,7 @@ function App() {
 
 	return (
 		<div className='container'>
-			<h1>Create Post</h1>
+			<h1 className='mt-5'>Create Post</h1>
 
 			<PostCreate />	
 
